@@ -15,6 +15,7 @@ public class LandingPage {
 	//page objects of the landing page step definition
 	By search = (By.xpath("//input[@type='search']"));
 	By productname = (By.xpath("//h4[contains(text(),'Tomato')]"));
+	By topDeals = (By.linkText("Top Deals"));
 	
 	//actions using  the above page objects
 	public void searchItem(String shortName) {
@@ -29,5 +30,9 @@ public class LandingPage {
 	public String getProductName() {
 		
 		return driver.findElement(productname).getText().split(" ")[0].trim();
+	}
+	
+	public void selectTopDeals() {
+		driver.findElement(topDeals).click();
 	}
 }

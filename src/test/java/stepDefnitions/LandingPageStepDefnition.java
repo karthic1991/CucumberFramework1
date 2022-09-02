@@ -25,14 +25,12 @@ public class LandingPageStepDefnition {
 	
 	@Given("User is on GreenCart landing page")
 	public void user_is_on_green_cart_landing_page() {
-		WebDriverManager.chromedriver().setup();
-		testContextSetup.driver = new ChromeDriver();
-		testContextSetup.driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+		
 	}
 	@When("User searched for ShortName {string} and extract the actual name of product")
 	public void user_searched_for_short_name_and_extract_the_actual_name_of_product(String shortName) throws InterruptedException {
 		
-		LandingPage landingPage = new LandingPage(testContextSetup.driver);
+		LandingPage landingPage = testContextSetup.pageobjectmanager.getLandingPage();
 		landingPage.searchItem(shortName);
 		//testContextSetup.driver.findElement(By.xpath("//input[@type='search']")).sendKeys(shortName);
        Thread.sleep(2000);
