@@ -9,8 +9,7 @@ public class Hooks {
 	
 	TestContextSetup testcontextsetup;
 	public Hooks(TestContextSetup testcontextsetup) {
-		this.testcontextsetup = testcontextsetup;
-		
+		this.testcontextsetup = testcontextsetup;		
 	}
 	
 	
