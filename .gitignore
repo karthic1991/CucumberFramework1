@@ -7,7 +7,6 @@
 .classpath
 .project
 test-output/
-target/
 
 # Created by https://www.gitignore.io/api/macos,java,windows,intellij,intellij+iml,maven
 

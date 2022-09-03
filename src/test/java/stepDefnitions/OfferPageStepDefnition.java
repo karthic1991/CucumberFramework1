@@ -30,7 +30,7 @@ public class OfferPageStepDefnition {
 	
 	
 	
-	@Then("^User searched for the (.+) ShortName in offers page$")
+	@Then("User searched for the {string} ShortName in offers page")
 	public void user_searched_for_the_same_short_name_in_offers_page (String shortName) throws InterruptedException {
 	
 		switchToOffersPage();
