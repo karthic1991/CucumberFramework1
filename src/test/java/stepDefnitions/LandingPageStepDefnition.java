@@ -27,7 +27,7 @@ public class LandingPageStepDefnition {
 	public void user_is_on_green_cart_landing_page() {
 		
 	}
-	@When("User searched for ShortName {string} and extract the actual name of product")
+	@When("^User searched for ShortName (.+) and extract the actual name of product$")
 	public void user_searched_for_short_name_and_extract_the_actual_name_of_product(String shortName) throws InterruptedException {
 		
 		LandingPage landingPage = testContextSetup.pageobjectmanager.getLandingPage();
