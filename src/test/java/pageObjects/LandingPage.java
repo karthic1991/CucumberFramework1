@@ -16,6 +16,8 @@ public class LandingPage {
 	By search = (By.xpath("//input[@type='search']"));
 	By productname = (By.xpath("//h4[contains(text(),'Tomato')]"));
 	By topDeals = (By.linkText("Top Deals"));
+	By increment = (By.xpath("//a[@class='increment']"));
+	By addTocart = (By.xpath("//button[contains(text(), 'ADD TO CART')]"));
 	
 	//actions using  the above page objects
 	public void searchItem(String shortName) {
@@ -34,5 +36,23 @@ public class LandingPage {
 	
 	public void selectTopDeals() {
 		driver.findElement(topDeals).click();
+	}
+	
+	public String getTitleLandingPage() {
+		return driver.getTitle();
+	}
+	
+	public void IncrementQuantity(int quantity) {
+		int i = quantity-1;
+		while(i>0) {
+			driver.findElement(increment).click();
+			i--;
+		}
+	}
+	
+	public void addToCart() {
+		 driver.findElement(addTocart).click();
+		
+		
 	}
 }

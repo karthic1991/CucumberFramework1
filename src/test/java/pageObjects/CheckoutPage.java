@@ -12,8 +12,8 @@ public WebDriver driver;
 		
 	}
 	
-            By cartbag = By.xpath("//button[@class='search-button']");
-            By checkoutbutton =  By.xpath("//img[@alt='Cart']");
+            By cartbag = By.xpath("//img[@alt='Cart']");;
+            By checkoutbutton =  By.xpath("//button[contains(text(), 'PROCEED TO CHECKOUT')]");
             By promobutton = By.xpath("//button[@class='promoBtn']");
             By placeorder = By.xpath("//button[contains(text(),'Place Order')]");
             

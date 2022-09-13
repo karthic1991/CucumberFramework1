@@ -1,5 +1,5 @@
 Feature: Search and place the order for product
-
+@PlaceOrder
 Scenario Outline: Place the order and verifying it in add to cart page
 
 Given User is on GreenCart landing page
@@ -11,4 +11,4 @@ And verify user has ability to enter promo code and place order
 Examples:
 |Name|
 |Tom |
-|Beet|
+

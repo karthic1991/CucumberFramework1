@@ -26,7 +26,11 @@ public class PageObjectManager {
 	}
 	
 	
-	
+	public CheckoutPage getCheckoutPage() {
+		
+		CheckoutPage checkoutpage = new CheckoutPage(driver);
+		return checkoutpage;
+	}
 	
 	
 	

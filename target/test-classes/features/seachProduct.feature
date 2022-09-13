@@ -1,5 +1,5 @@
 Feature: Search and place the order for products
-
+@OffersPage
 Scenario Outline: Search experience for product search in home and offer page
 
 Given User is on GreenCart landing page
